@@ -13,7 +13,6 @@ function addCommas(nStr) {
   
 const totalNum = 2986792;
 var total = addCommas(totalNum);
-// console.log(total);
 
 
 const tabularData = [

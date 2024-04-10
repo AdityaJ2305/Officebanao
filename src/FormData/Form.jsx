@@ -7,6 +7,7 @@ function Form({setIsOverlayVisible,isOverlayVisible}) {
   const [commencement, setCommencement] = useState("");
   const [completion, setCompletion] = useState("");
   const [rfq, setRfq] = useState("");
+  
   const handleClicker = (e) => {
     e.preventDefault();
     if(client.trim()==="" || commencement.trim()==="" || completion.trim()==="" || rfq.trim()===""){
