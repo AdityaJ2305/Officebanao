@@ -9,6 +9,10 @@ function Form({setIsOverlayVisible,isOverlayVisible}) {
   const [rfq, setRfq] = useState("");
   const handleClicker = (e) => {
     e.preventDefault();
+    if(client.trim()==="" || commencement.trim()==="" || completion.trim()==="" || rfq.trim()===""){
+      toast.error("Please fill out  all fields");
+      return ; 
+    }
     if(!handleDataFormat(commencement) && !handleDataFormat(completion)){
       setCommencement("");
       setCompletion("")
@@ -26,7 +30,7 @@ function Form({setIsOverlayVisible,isOverlayVisible}) {
     toast.success("Saved");
     setTimeout(() => {
       setIsOverlayVisible(!isOverlayVisible)
-    }, 500);
+    }, 700);
   };
 
   function handleDataFormat(date){
