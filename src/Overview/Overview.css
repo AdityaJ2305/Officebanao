@@ -1,5 +1,6 @@
 .overviewLayer{
     margin-bottom: 50px;
+    z-index: 5;
 }
 .tableHeader{
     background-color: var(--table-head-bgc);

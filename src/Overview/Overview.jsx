@@ -1,5 +1,5 @@
 import "./Overview.css"
-import Row from "./CivilRow/CivilRow"
+import CivilRow from "./CivilRow/CivilRow"
 import React, { useState } from 'react'
 import {tabularData} from "../Overview/data"
 
@@ -23,7 +23,7 @@ function Overview() {
       <div></div> 
     </div>
     {tabularData.map((data,index)=>(
-      <Row key={index} data={data} packageChecked={packageChecked}/>
+      <CivilRow key={index} data={data} packageChecked={packageChecked}/>
     ))}
     </div>
   )
