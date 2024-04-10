@@ -16,3 +16,6 @@ code {
 @tailwind utilities;
 
 
+input[type="checkbox"] {
+  box-shadow: 0 0 5px grey;
+}

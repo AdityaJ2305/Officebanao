@@ -9,7 +9,7 @@ import './Overlay.css';
 function Overlay({ setIsOverlayVisible, isOverlayVisible }){
   return (
     <div className={`overlay ${isOverlayVisible ? 'visible' : ''}`}>
-      <div className={`overlay-content ${isOverlayVisible ? '' : 'overlay-off'}`}>
+      <div className={`${isOverlayVisible ? 'overlay-content' : 'overlay-off'}`}>
         <div className='formTopbar'>
           <h2 className='font-bold'>Workorder</h2>
           <FontAwesomeIcon icon={faTimes} onClick={() => setIsOverlayVisible(false)} />

@@ -6,9 +6,8 @@ import { faChevronUp,faChevronDown} from '@fortawesome/free-solid-svg-icons';
 
 function ActivityRow({data,civilChecked}) {
    const[activityChecked,setAcitivityChecked] = useState(civilChecked || false);
-
    const [expandActivity,setexpandActivity] = useState(false)
-
+    
    useEffect(() => {
     setAcitivityChecked(civilChecked);
 }, [civilChecked]);
