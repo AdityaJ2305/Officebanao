@@ -13,7 +13,7 @@ function Overlay({ setIsOverlayVisible, isOverlayVisible }){
   const drawerClass = `menuBoxStyle ${isOverlayVisible ? 'menuBoxStyleVisible' : 'menuBoxStyleHidden'}`;
   
   return (
-    <div className= {isOverlayVisible ? 'wrapper' : 'container'}>
+    <div className= {isOverlayVisible ? 'wrapper' : ''}>
       <div className={drawerClass}>
         <div className='formTopbar'>
           <h2 className='font-bold'>Workorder</h2>
